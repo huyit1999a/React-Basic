@@ -1,0 +1,49 @@
+@mixin buttonStyle {
+	outline: none;
+	border: none;
+	color: white;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.list-todo-container {
+	color: #e9d860;
+	.add-todo {
+		&-input {
+			outline: none;
+			padding: 6px 8px;
+			width: 240px;
+		}
+		button {
+			@include buttonStyle();
+			padding: 7px 10px;
+			background-color: rgb(45, 146, 240);
+		}
+	}
+	.list-todo {
+		margin-top: 40px;
+
+		.todo {
+			.todo-text {
+				input {
+					outline: none;
+					padding: 6px 8px;
+					width: 240px;
+				}
+			}
+			margin: 10px 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			button {
+				@include buttonStyle();
+				padding: 6px 10px;
+			}
+			.btn-edit {
+				background-color: #17a2b8;
+			}
+			.btn-delete {
+				background-color: #dc3545;
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.list-user {
+	width: 400px;
+	margin: 0 auto;
+}
+#users {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	td,
+	th {
+		border: 1px solid #ddd;
+		padding: 8px;
+		text-align: center;
+		color: #e9d860;
+	}
+	tr {
+		&:hover {
+			background-color: #282c34;
+			opacity: 0.4;
+		}
+	}
+	th {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		background-color: #58530f;
+		color: #e9d860;
+	}
+}
